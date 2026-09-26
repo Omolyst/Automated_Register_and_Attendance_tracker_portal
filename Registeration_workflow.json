@@ -1,0 +1,2406 @@
+{
+    "name": "All Members Register",
+    "flow": [
+        {
+            "id": 2,
+            "module": "tally:watchNewResponse",
+            "version": 1,
+            "parameters": {
+                "__IMTHOOK__": 3358797
+            },
+            "mapper": {},
+            "metadata": {
+                "designer": {
+                    "x": -195,
+                    "y": -6
+                },
+                "restore": {
+                    "parameters": {
+                        "__IMTHOOK__": {
+                            "data": {
+                                "editable": "false"
+                            },
+                            "label": "All Member Register"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "__IMTHOOK__",
+                        "type": "hook:tally",
+                        "label": "Webhook",
+                        "required": true
+                    }
+                ],
+                "interface": [
+                    {
+                        "name": "eventId",
+                        "type": "text",
+                        "label": "Event ID"
+                    },
+                    {
+                        "name": "responseId",
+                        "type": "text",
+                        "label": "Response ID"
+                    },
+                    {
+                        "name": "submissionId",
+                        "type": "text",
+                        "label": "Submission ID"
+                    },
+                    {
+                        "name": "respondentId",
+                        "type": "text",
+                        "label": "Respondent ID"
+                    },
+                    {
+                        "name": "formId",
+                        "type": "text",
+                        "label": "Form ID"
+                    },
+                    {
+                        "name": "formName",
+                        "type": "text",
+                        "label": "Form Name"
+                    },
+                    {
+                        "name": "createdAt",
+                        "type": "date",
+                        "label": "Created at"
+                    },
+                    {
+                        "name": "submissionPdfUrl",
+                        "type": "url",
+                        "label": "Submission PDF URL"
+                    },
+                    {
+                        "name": "submissionPreviewUrl",
+                        "type": "url",
+                        "label": "Submission Preview URL"
+                    },
+                    {
+                        "name": "fields",
+                        "spec": [
+                            {
+                                "name": "Who is this form form for",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array"
+                            },
+                            {
+                                "name": "First Name",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Last Name",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Phone",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Email",
+                                "type": "email"
+                            },
+                            {
+                                "name": "Address",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Gender",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array"
+                            },
+                            {
+                                "name": "Birthday",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Status",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array"
+                            },
+                            {
+                                "name": "Department",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array"
+                            },
+                            {
+                                "name": "Please specify your department",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Are you registering any child?",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array"
+                            },
+                            {
+                                "name": "Child1 First Name",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Child1 Last Name",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Child1 Date of Birth",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Child1 Gender",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array"
+                            },
+                            {
+                                "name": "Child1 Relationship to Child",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array"
+                            },
+                            {
+                                "name": "Are you registering a 2nd child",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array"
+                            },
+                            {
+                                "name": "Child2 First Name",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Child2 Last Name",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Child2 Date of Birth",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Child2 Gender",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array"
+                            },
+                            {
+                                "name": "Child2 Relationship to Child",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array"
+                            },
+                            {
+                                "name": "Are you registering a 3rd child",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array"
+                            },
+                            {
+                                "name": "Child3 First Name",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Child3 Last Name",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Child3 Date of Birth",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Child3 Gender",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array"
+                            },
+                            {
+                                "name": "Child3 relationship to child",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array"
+                            },
+                            {
+                                "name": "Are you registering a 4th child",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array"
+                            },
+                            {
+                                "name": "Child4 First Name",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Child4 Last Name",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Child4 Date of Birth",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Child4 Gender",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array"
+                            },
+                            {
+                                "name": "Child4 Relationship to child",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array"
+                            }
+                        ],
+                        "type": "collection",
+                        "label": "Fields"
+                    },
+                    {
+                        "name": "fieldsById",
+                        "spec": [
+                            {
+                                "name": "question_WP7zKL",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array",
+                                "label": "Who is this form form for"
+                            },
+                            {
+                                "name": "question_2LGKe9",
+                                "type": "text",
+                                "label": "First Name"
+                            },
+                            {
+                                "name": "question_x25Jp5",
+                                "type": "text",
+                                "label": "Last Name"
+                            },
+                            {
+                                "name": "question_Zlr2NB",
+                                "type": "text",
+                                "label": "Phone"
+                            },
+                            {
+                                "name": "question_NL176j",
+                                "type": "email",
+                                "label": "Email"
+                            },
+                            {
+                                "name": "question_Yrl4ZJ",
+                                "type": "text",
+                                "label": "Address"
+                            },
+                            {
+                                "name": "question_a0MdAW",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array",
+                                "label": "Gender"
+                            },
+                            {
+                                "name": "question_qO1Rd9",
+                                "type": "text",
+                                "label": "Birthday"
+                            },
+                            {
+                                "name": "question_D567VZ",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array",
+                                "label": "Status"
+                            },
+                            {
+                                "name": "question_Qdl7DG",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array",
+                                "label": "Department"
+                            },
+                            {
+                                "name": "question_9Oj7WV",
+                                "type": "text",
+                                "label": "Please specify your department"
+                            },
+                            {
+                                "name": "question_eLWa6k",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array",
+                                "label": "Are you registering any child?"
+                            },
+                            {
+                                "name": "question_WPV8Nv",
+                                "type": "text",
+                                "label": "Child1 First Name"
+                            },
+                            {
+                                "name": "question_dle9YK",
+                                "type": "text",
+                                "label": "Child1 Last Name"
+                            },
+                            {
+                                "name": "question_a0q26b",
+                                "type": "text",
+                                "label": "Child1 Date of Birth"
+                            },
+                            {
+                                "name": "question_6REZdJ",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array",
+                                "label": "Child1 Gender"
+                            },
+                            {
+                                "name": "question_7orNdR",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array",
+                                "label": "Child1 Relationship to Child"
+                            },
+                            {
+                                "name": "question_bLQWlZ",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array",
+                                "label": "Are you registering a 2nd child"
+                            },
+                            {
+                                "name": "question_AxeBlz",
+                                "type": "text",
+                                "label": "Child2 First Name"
+                            },
+                            {
+                                "name": "question_BZWxGK",
+                                "type": "text",
+                                "label": "Child2 Last Name"
+                            },
+                            {
+                                "name": "question_k5BNYe",
+                                "type": "text",
+                                "label": "Child2 Date of Birth"
+                            },
+                            {
+                                "name": "question_v45PND",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array",
+                                "label": "Child2 Gender"
+                            },
+                            {
+                                "name": "question_KLKVMV",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array",
+                                "label": "Child2 Relationship to Child"
+                            },
+                            {
+                                "name": "question_LXLPdp",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array",
+                                "label": "Are you registering a 3rd child"
+                            },
+                            {
+                                "name": "question_pGpDLB",
+                                "type": "text",
+                                "label": "Child3 First Name"
+                            },
+                            {
+                                "name": "question_1Mo9rl",
+                                "type": "text",
+                                "label": "Child3 Last Name"
+                            },
+                            {
+                                "name": "question_MLpEAA",
+                                "type": "text",
+                                "label": "Child3 Date of Birth"
+                            },
+                            {
+                                "name": "question_JLvO2R",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array",
+                                "label": "Child3 Gender"
+                            },
+                            {
+                                "name": "question_gL6954",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array",
+                                "label": "Child3 relationship to child"
+                            },
+                            {
+                                "name": "question_yx5Jlx",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array",
+                                "label": "Are you registering a 4th child"
+                            },
+                            {
+                                "name": "question_XEP4eY",
+                                "type": "text",
+                                "label": "Child4 First Name"
+                            },
+                            {
+                                "name": "question_8G4ZdP",
+                                "type": "text",
+                                "label": "Child4 Last Name"
+                            },
+                            {
+                                "name": "question_0LReEj",
+                                "type": "text",
+                                "label": "Child4 Date of Birth"
+                            },
+                            {
+                                "name": "question_zZ57K0",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array",
+                                "label": "Child4 Gender"
+                            },
+                            {
+                                "name": "question_5LPZdE",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array",
+                                "label": "Child4 Relationship to child"
+                            }
+                        ],
+                        "type": "collection",
+                        "label": "Fields by ID"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "module": "builtin:BasicRouter",
+            "version": 1,
+            "mapper": null,
+            "metadata": {
+                "designer": {
+                    "x": 105,
+                    "y": -6
+                }
+            },
+            "routes": [
+                {
+                    "flow": [
+                        {
+                            "id": 4,
+                            "module": "supabase:createARow",
+                            "version": 1,
+                            "parameters": {
+                                "__IMTCONN__": 8314975
+                            },
+                            "filter": {
+                                "name": "Family",
+                                "conditions": [
+                                    [
+                                        {
+                                            "a": "{{2.fields.`Who is this form form for`}}",
+                                            "b": "Family",
+                                            "o": "text:equal"
+                                        }
+                                    ]
+                                ]
+                            },
+                            "mapper": {
+                                "email": "{{2.fieldsById.question_NL176j}}",
+                                "phone": "{{2.fieldsById.question_Zlr2NB}}",
+                                "table": "people",
+                                "gender": "{{2.fieldsById.question_a0MdAW[]}}",
+                                "address": "{{2.fieldsById.question_Yrl4ZJ}}",
+                                "birthday": "{{2.fieldsById.question_qO1Rd9}}",
+                                "position": "{{2.fieldsById.question_D567VZ[]}}",
+                                "last_name": "{{2.fieldsById.question_x25Jp5}}",
+                                "department": "{{2.fieldsById.question_Qdl7DG[]}}",
+                                "first_name": "{{2.fieldsById.question_2LGKe9}}"
+                            },
+                            "metadata": {
+                                "designer": {
+                                    "x": 405,
+                                    "y": -156,
+                                    "name": "Adult_register"
+                                },
+                                "restore": {
+                                    "expect": {
+                                        "table": {
+                                            "mode": "edit",
+                                            "nested": [
+                                                {
+                                                    "help": "Note:\nThis is a Primary Key.<pk/>",
+                                                    "name": "id",
+                                                    "type": "integer",
+                                                    "label": "id",
+                                                    "options": null,
+                                                    "required": false
+                                                },
+                                                {
+                                                    "help": "",
+                                                    "name": "first_name",
+                                                    "type": "text",
+                                                    "label": "first_name",
+                                                    "options": null,
+                                                    "required": false
+                                                },
+                                                {
+                                                    "help": "",
+                                                    "name": "last_name",
+                                                    "type": "text",
+                                                    "label": "last_name",
+                                                    "options": null,
+                                                    "required": false
+                                                },
+                                                {
+                                                    "help": "",
+                                                    "name": "phone",
+                                                    "type": "text",
+                                                    "label": "phone",
+                                                    "options": null,
+                                                    "required": false
+                                                },
+                                                {
+                                                    "help": "",
+                                                    "name": "email",
+                                                    "type": "text",
+                                                    "label": "email",
+                                                    "options": null,
+                                                    "required": false
+                                                },
+                                                {
+                                                    "help": "",
+                                                    "name": "position",
+                                                    "type": "text",
+                                                    "label": "position",
+                                                    "options": null,
+                                                    "required": false
+                                                },
+                                                {
+                                                    "help": "Defaults to NULL. ",
+                                                    "name": "department",
+                                                    "type": "text",
+                                                    "label": "department",
+                                                    "options": null,
+                                                    "required": false
+                                                },
+                                                {
+                                                    "help": "Defaults to now(). ",
+                                                    "name": "created_at",
+                                                    "type": "text",
+                                                    "label": "created_at",
+                                                    "options": null,
+                                                    "required": false
+                                                },
+                                                {
+                                                    "help": "",
+                                                    "name": "birthday",
+                                                    "type": "date",
+                                                    "label": "birthday",
+                                                    "options": null,
+                                                    "required": false
+                                                },
+                                                {
+                                                    "help": "",
+                                                    "name": "address",
+                                                    "type": "text",
+                                                    "label": "address",
+                                                    "options": null,
+                                                    "required": false
+                                                },
+                                                {
+                                                    "help": "",
+                                                    "name": "gender",
+                                                    "type": "text",
+                                                    "label": "gender",
+                                                    "options": null,
+                                                    "required": false
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "parameters": {
+                                        "__IMTCONN__": {
+                                            "data": {
+                                                "scoped": "true",
+                                                "connection": "supabase"
+                                            },
+                                            "label": "church project connection"
+                                        }
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "__IMTCONN__",
+                                        "type": "account:supabase",
+                                        "label": "Connection",
+                                        "required": true
+                                    }
+                                ],
+                                "expect": [
+                                    {
+                                        "name": "table",
+                                        "type": "select",
+                                        "label": "Table",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "id",
+                                        "type": "integer"
+                                    },
+                                    {
+                                        "name": "first_name",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "name": "last_name",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "name": "phone",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "name": "email",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "name": "position",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "name": "department",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "name": "created_at",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "name": "birthday",
+                                        "type": "date"
+                                    },
+                                    {
+                                        "name": "address",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "name": "gender",
+                                        "type": "text"
+                                    }
+                                ],
+                                "interface": [
+                                    {
+                                        "name": "id",
+                                        "type": "number",
+                                        "label": "id"
+                                    },
+                                    {
+                                        "name": "first_name",
+                                        "type": "text",
+                                        "label": "first_name"
+                                    },
+                                    {
+                                        "name": "last_name",
+                                        "type": "text",
+                                        "label": "last_name"
+                                    },
+                                    {
+                                        "name": "phone",
+                                        "type": "text",
+                                        "label": "phone"
+                                    },
+                                    {
+                                        "name": "email",
+                                        "type": "text",
+                                        "label": "email"
+                                    },
+                                    {
+                                        "name": "position",
+                                        "type": "text",
+                                        "label": "position"
+                                    },
+                                    {
+                                        "name": "department",
+                                        "type": "text",
+                                        "label": "department"
+                                    },
+                                    {
+                                        "name": "created_at",
+                                        "type": "text",
+                                        "label": "created_at"
+                                    },
+                                    {
+                                        "name": "birthday",
+                                        "type": "text",
+                                        "label": "birthday"
+                                    },
+                                    {
+                                        "name": "address",
+                                        "type": "text",
+                                        "label": "address"
+                                    },
+                                    {
+                                        "name": "gender",
+                                        "type": "text",
+                                        "label": "gender"
+                                    }
+                                ]
+                            },
+                            "onerror": [
+                                {
+                                    "id": 18,
+                                    "module": "google-email:sendAnEmail",
+                                    "version": 4,
+                                    "parameters": {
+                                        "__IMTCONN__": 8826475
+                                    },
+                                    "filter": null,
+                                    "mapper": {
+                                        "to": "oluwagbengwumi@gmail.com",
+                                        "content": "Failed to register me into the register {{2.fields.`First Name`}}{{2.fields.`Last Name`}}",
+                                        "subject": "{{4.error.type}}{{4.error.message}}",
+                                        "bodyType": "rawHtml"
+                                    },
+                                    "metadata": {
+                                        "designer": {
+                                            "x": 705,
+                                            "y": -6
+                                        },
+                                        "restore": {
+                                            "expect": {
+                                                "cc": {
+                                                    "mode": "chose"
+                                                },
+                                                "to": {
+                                                    "mode": "edit",
+                                                    "items": [
+                                                        null
+                                                    ]
+                                                },
+                                                "bcc": {
+                                                    "mode": "chose"
+                                                },
+                                                "from": {
+                                                    "mode": "chose"
+                                                },
+                                                "bodyType": {
+                                                    "label": "Raw HTML"
+                                                },
+                                                "attachments": {
+                                                    "mode": "chose"
+                                                },
+                                                "emailHeaders": {
+                                                    "mode": "chose"
+                                                }
+                                            },
+                                            "parameters": {
+                                                "__IMTCONN__": {
+                                                    "data": {
+                                                        "scoped": "true",
+                                                        "connection": "google-email"
+                                                    },
+                                                    "label": "My Gmail (oluwagbengwumi@gmail.com)"
+                                                }
+                                            }
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "__IMTCONN__",
+                                                "type": "account:google-email",
+                                                "label": "Connection",
+                                                "required": true
+                                            }
+                                        ],
+                                        "expect": [
+                                            {
+                                                "name": "to",
+                                                "spec": {
+                                                    "name": "value",
+                                                    "type": "email",
+                                                    "label": "Recipient email address",
+                                                    "required": true,
+                                                    "validate": true
+                                                },
+                                                "type": "array",
+                                                "label": "To",
+                                                "required": true
+                                            },
+                                            {
+                                                "name": "subject",
+                                                "type": "text",
+                                                "label": "Subject"
+                                            },
+                                            {
+                                                "name": "bodyType",
+                                                "type": "select",
+                                                "label": "Body type",
+                                                "required": true,
+                                                "validate": {
+                                                    "enum": [
+                                                        "rawHtml",
+                                                        "collection"
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "name": "attachments",
+                                                "spec": {
+                                                    "name": "value",
+                                                    "spec": [
+                                                        {
+                                                            "name": "filename",
+                                                            "type": "filename",
+                                                            "label": "File name",
+                                                            "required": true,
+                                                            "semantic": "file:name"
+                                                        },
+                                                        {
+                                                            "name": "data",
+                                                            "type": "buffer",
+                                                            "label": "Data",
+                                                            "required": true,
+                                                            "semantic": "file:data"
+                                                        }
+                                                    ],
+                                                    "type": "collection",
+                                                    "label": "Attachment"
+                                                },
+                                                "type": "array",
+                                                "label": "Attachments"
+                                            },
+                                            {
+                                                "name": "from",
+                                                "type": "select",
+                                                "label": "From"
+                                            },
+                                            {
+                                                "name": "cc",
+                                                "spec": {
+                                                    "name": "value",
+                                                    "type": "email",
+                                                    "label": "Recipient email address"
+                                                },
+                                                "type": "array",
+                                                "label": "CC recipients"
+                                            },
+                                            {
+                                                "name": "bcc",
+                                                "spec": {
+                                                    "name": "value",
+                                                    "type": "email",
+                                                    "label": "Recipient email address"
+                                                },
+                                                "type": "array",
+                                                "label": "BCC recipients"
+                                            },
+                                            {
+                                                "name": "emailHeaders",
+                                                "spec": {
+                                                    "name": "value",
+                                                    "spec": [
+                                                        {
+                                                            "name": "key",
+                                                            "type": "text",
+                                                            "label": "Key",
+                                                            "required": true
+                                                        },
+                                                        {
+                                                            "name": "value",
+                                                            "type": "text",
+                                                            "label": "Value"
+                                                        }
+                                                    ],
+                                                    "type": "collection",
+                                                    "label": "Email header"
+                                                },
+                                                "type": "array",
+                                                "label": "Additional email headers"
+                                            },
+                                            {
+                                                "name": "content",
+                                                "type": "text",
+                                                "label": "Content"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "id": 16,
+                                    "module": "builtin:Break",
+                                    "version": 1,
+                                    "parameters": {},
+                                    "mapper": {
+                                        "count": "3",
+                                        "retry": "{{true}}",
+                                        "interval": "15"
+                                    },
+                                    "metadata": {
+                                        "designer": {
+                                            "x": 1005,
+                                            "y": -6
+                                        },
+                                        "restore": {
+                                            "expect": {
+                                                "retry": {
+                                                    "mode": "edit"
+                                                }
+                                            }
+                                        },
+                                        "expect": [
+                                            {
+                                                "name": "retry",
+                                                "type": "boolean",
+                                                "label": "Retry automatically",
+                                                "required": true
+                                            },
+                                            {
+                                                "name": "count",
+                                                "type": "uinteger",
+                                                "label": "Number of retries",
+                                                "required": true,
+                                                "validate": {
+                                                    "max": 10000,
+                                                    "min": 1
+                                                }
+                                            },
+                                            {
+                                                "name": "interval",
+                                                "type": "uinteger",
+                                                "label": "Minutes between retries",
+                                                "required": true,
+                                                "validate": {
+                                                    "max": 44640,
+                                                    "min": 1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": 17,
+                            "module": "util:FunctionSleep",
+                            "version": 1,
+                            "parameters": {},
+                            "filter": null,
+                            "mapper": {
+                                "duration": "2"
+                            },
+                            "metadata": {
+                                "designer": {
+                                    "x": 705,
+                                    "y": -306
+                                },
+                                "restore": {},
+                                "expect": [
+                                    {
+                                        "name": "duration",
+                                        "type": "uinteger",
+                                        "label": "Delay",
+                                        "required": true,
+                                        "validate": {
+                                            "max": 300,
+                                            "min": 1
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": 6,
+                            "module": "builtin:BasicRouter",
+                            "version": 1,
+                            "mapper": null,
+                            "metadata": {
+                                "designer": {
+                                    "x": 1005,
+                                    "y": -306
+                                }
+                            },
+                            "routes": [
+                                {
+                                    "flow": [
+                                        {
+                                            "id": 7,
+                                            "module": "supabase:createARow",
+                                            "version": 1,
+                                            "parameters": {
+                                                "__IMTCONN__": 8314975
+                                            },
+                                            "filter": {
+                                                "name": "Child1 Exist",
+                                                "conditions": [
+                                                    [
+                                                        {
+                                                            "a": "{{2.fieldsById.question_eLWa6k}}",
+                                                            "b": "Yes",
+                                                            "o": "text:equal"
+                                                        }
+                                                    ]
+                                                ]
+                                            },
+                                            "mapper": {
+                                                "table": "children",
+                                                "gender": "{{2.fieldsById.question_6REZdJ[]}}",
+                                                "last_name": "{{2.fieldsById.question_dle9YK}}",
+                                                "first_name": "{{2.fieldsById.question_WPV8Nv}}",
+                                                "date_of_birth": "{{2.fieldsById.question_a0q26b}}"
+                                            },
+                                            "metadata": {
+                                                "designer": {
+                                                    "x": 1323,
+                                                    "y": -423,
+                                                    "name": "child1"
+                                                },
+                                                "restore": {
+                                                    "expect": {
+                                                        "table": {
+                                                            "mode": "edit",
+                                                            "nested": [
+                                                                {
+                                                                    "help": "Note:\nThis is a Primary Key.<pk/>",
+                                                                    "name": "child_id",
+                                                                    "type": "integer",
+                                                                    "label": "child_id",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                },
+                                                                {
+                                                                    "help": "",
+                                                                    "name": "date_of_birth",
+                                                                    "type": "date",
+                                                                    "label": "date_of_birth",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                },
+                                                                {
+                                                                    "help": "Defaults to NULL. ",
+                                                                    "name": "gender",
+                                                                    "type": "text",
+                                                                    "label": "gender",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                },
+                                                                {
+                                                                    "help": "Defaults to NULL. ",
+                                                                    "name": "emergency_contact",
+                                                                    "type": "text",
+                                                                    "label": "emergency_contact",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                },
+                                                                {
+                                                                    "help": "Defaults to Unknown. ",
+                                                                    "name": "first_name",
+                                                                    "type": "text",
+                                                                    "label": "first_name",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                },
+                                                                {
+                                                                    "help": "Defaults to Unknown. ",
+                                                                    "name": "last_name",
+                                                                    "type": "text",
+                                                                    "label": "last_name",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "parameters": {
+                                                        "__IMTCONN__": {
+                                                            "data": {
+                                                                "scoped": "true",
+                                                                "connection": "supabase"
+                                                            },
+                                                            "label": "church project connection"
+                                                        }
+                                                    }
+                                                },
+                                                "parameters": [
+                                                    {
+                                                        "name": "__IMTCONN__",
+                                                        "type": "account:supabase",
+                                                        "label": "Connection",
+                                                        "required": true
+                                                    }
+                                                ],
+                                                "expect": [
+                                                    {
+                                                        "name": "table",
+                                                        "type": "select",
+                                                        "label": "Table",
+                                                        "required": true
+                                                    },
+                                                    {
+                                                        "name": "child_id",
+                                                        "type": "integer"
+                                                    },
+                                                    {
+                                                        "name": "date_of_birth",
+                                                        "type": "date"
+                                                    },
+                                                    {
+                                                        "name": "gender",
+                                                        "type": "text"
+                                                    },
+                                                    {
+                                                        "name": "emergency_contact",
+                                                        "type": "text"
+                                                    },
+                                                    {
+                                                        "name": "first_name",
+                                                        "type": "text"
+                                                    },
+                                                    {
+                                                        "name": "last_name",
+                                                        "type": "text"
+                                                    }
+                                                ],
+                                                "interface": [
+                                                    {
+                                                        "name": "child_id",
+                                                        "type": "number",
+                                                        "label": "child_id"
+                                                    },
+                                                    {
+                                                        "name": "date_of_birth",
+                                                        "type": "text",
+                                                        "label": "date_of_birth"
+                                                    },
+                                                    {
+                                                        "name": "gender",
+                                                        "type": "text",
+                                                        "label": "gender"
+                                                    },
+                                                    {
+                                                        "name": "emergency_contact",
+                                                        "type": "text",
+                                                        "label": "emergency_contact"
+                                                    },
+                                                    {
+                                                        "name": "first_name",
+                                                        "type": "text",
+                                                        "label": "first_name"
+                                                    },
+                                                    {
+                                                        "name": "last_name",
+                                                        "type": "text",
+                                                        "label": "last_name"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "id": 11,
+                                            "module": "supabase:createARow",
+                                            "version": 1,
+                                            "parameters": {
+                                                "__IMTCONN__": 8314975
+                                            },
+                                            "mapper": {
+                                                "table": "parent_child",
+                                                "child_id": "{{7.child_id}}",
+                                                "parent_id": "{{4.id}}",
+                                                "relationship_type": "{{2.fieldsById.question_7orNdR[]}}"
+                                            },
+                                            "metadata": {
+                                                "designer": {
+                                                    "x": 1638,
+                                                    "y": -384,
+                                                    "name": "child1_parent_relation"
+                                                },
+                                                "setupValidation": {
+                                                    "version": 1,
+                                                    "configuration": "b9e8628e282457d5",
+                                                    "result": {
+                                                        "valid": true,
+                                                        "fields": []
+                                                    }
+                                                },
+                                                "restore": {
+                                                    "expect": {
+                                                        "table": {
+                                                            "mode": "edit",
+                                                            "nested": [
+                                                                {
+                                                                    "help": "Note:\nThis is a Primary Key.<pk/>\nThis is a Foreign Key to `people.id`.<fk table='people' column='id'/>",
+                                                                    "name": "parent_id",
+                                                                    "type": "integer",
+                                                                    "label": "parent_id",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                },
+                                                                {
+                                                                    "help": "Note:\nThis is a Primary Key.<pk/>\nThis is a Foreign Key to `children.child_id`.<fk table='children' column='child_id'/>",
+                                                                    "name": "child_id",
+                                                                    "type": "integer",
+                                                                    "label": "child_id",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                },
+                                                                {
+                                                                    "help": "",
+                                                                    "name": "relationship_type",
+                                                                    "type": "text",
+                                                                    "label": "relationship_type",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "parameters": {
+                                                        "__IMTCONN__": {
+                                                            "data": {
+                                                                "scoped": "true",
+                                                                "connection": "supabase"
+                                                            },
+                                                            "label": "church project connection"
+                                                        }
+                                                    }
+                                                },
+                                                "parameters": [
+                                                    {
+                                                        "name": "__IMTCONN__",
+                                                        "type": "account:supabase",
+                                                        "label": "Connection",
+                                                        "required": true
+                                                    }
+                                                ],
+                                                "expect": [
+                                                    {
+                                                        "name": "table",
+                                                        "type": "select",
+                                                        "label": "Table",
+                                                        "required": true
+                                                    },
+                                                    {
+                                                        "name": "parent_id",
+                                                        "type": "integer"
+                                                    },
+                                                    {
+                                                        "name": "child_id",
+                                                        "type": "integer"
+                                                    },
+                                                    {
+                                                        "name": "relationship_type",
+                                                        "type": "text"
+                                                    }
+                                                ],
+                                                "interface": [
+                                                    {
+                                                        "name": "parent_id",
+                                                        "type": "number",
+                                                        "label": "parent_id"
+                                                    },
+                                                    {
+                                                        "name": "child_id",
+                                                        "type": "number",
+                                                        "label": "child_id"
+                                                    },
+                                                    {
+                                                        "name": "relationship_type",
+                                                        "type": "text",
+                                                        "label": "relationship_type"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "flow": [
+                                        {
+                                            "id": 8,
+                                            "module": "supabase:createARow",
+                                            "version": 1,
+                                            "parameters": {
+                                                "__IMTCONN__": 8314975
+                                            },
+                                            "filter": {
+                                                "name": "child2 Exists",
+                                                "conditions": [
+                                                    [
+                                                        {
+                                                            "a": "{{2.fieldsById.question_bLQWlZ}}",
+                                                            "b": "Yes",
+                                                            "o": "text:equal"
+                                                        }
+                                                    ]
+                                                ]
+                                            },
+                                            "mapper": {
+                                                "table": "children",
+                                                "gender": "{{2.fieldsById.question_v45PND[]}}",
+                                                "last_name": "{{2.fieldsById.question_BZWxGK}}",
+                                                "first_name": "{{2.fieldsById.question_AxeBlz}}",
+                                                "date_of_birth": "{{2.fieldsById.question_k5BNYe}}"
+                                            },
+                                            "metadata": {
+                                                "designer": {
+                                                    "x": 1456,
+                                                    "y": -196,
+                                                    "name": "child2"
+                                                },
+                                                "restore": {
+                                                    "expect": {
+                                                        "table": {
+                                                            "mode": "edit",
+                                                            "nested": [
+                                                                {
+                                                                    "help": "Note:\nThis is a Primary Key.<pk/>",
+                                                                    "name": "child_id",
+                                                                    "type": "integer",
+                                                                    "label": "child_id",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                },
+                                                                {
+                                                                    "help": "",
+                                                                    "name": "date_of_birth",
+                                                                    "type": "date",
+                                                                    "label": "date_of_birth",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                },
+                                                                {
+                                                                    "help": "Defaults to NULL. ",
+                                                                    "name": "gender",
+                                                                    "type": "text",
+                                                                    "label": "gender",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                },
+                                                                {
+                                                                    "help": "Defaults to NULL. ",
+                                                                    "name": "emergency_contact",
+                                                                    "type": "text",
+                                                                    "label": "emergency_contact",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                },
+                                                                {
+                                                                    "help": "Defaults to Unknown. ",
+                                                                    "name": "first_name",
+                                                                    "type": "text",
+                                                                    "label": "first_name",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                },
+                                                                {
+                                                                    "help": "Defaults to Unknown. ",
+                                                                    "name": "last_name",
+                                                                    "type": "text",
+                                                                    "label": "last_name",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "parameters": {
+                                                        "__IMTCONN__": {
+                                                            "data": {
+                                                                "scoped": "true",
+                                                                "connection": "supabase"
+                                                            },
+                                                            "label": "church project connection"
+                                                        }
+                                                    }
+                                                },
+                                                "parameters": [
+                                                    {
+                                                        "name": "__IMTCONN__",
+                                                        "type": "account:supabase",
+                                                        "label": "Connection",
+                                                        "required": true
+                                                    }
+                                                ],
+                                                "expect": [
+                                                    {
+                                                        "name": "table",
+                                                        "type": "select",
+                                                        "label": "Table",
+                                                        "required": true
+                                                    },
+                                                    {
+                                                        "name": "child_id",
+                                                        "type": "integer"
+                                                    },
+                                                    {
+                                                        "name": "date_of_birth",
+                                                        "type": "date"
+                                                    },
+                                                    {
+                                                        "name": "gender",
+                                                        "type": "text"
+                                                    },
+                                                    {
+                                                        "name": "emergency_contact",
+                                                        "type": "text"
+                                                    },
+                                                    {
+                                                        "name": "first_name",
+                                                        "type": "text"
+                                                    },
+                                                    {
+                                                        "name": "last_name",
+                                                        "type": "text"
+                                                    }
+                                                ],
+                                                "interface": [
+                                                    {
+                                                        "name": "child_id",
+                                                        "type": "number",
+                                                        "label": "child_id"
+                                                    },
+                                                    {
+                                                        "name": "date_of_birth",
+                                                        "type": "text",
+                                                        "label": "date_of_birth"
+                                                    },
+                                                    {
+                                                        "name": "gender",
+                                                        "type": "text",
+                                                        "label": "gender"
+                                                    },
+                                                    {
+                                                        "name": "emergency_contact",
+                                                        "type": "text",
+                                                        "label": "emergency_contact"
+                                                    },
+                                                    {
+                                                        "name": "first_name",
+                                                        "type": "text",
+                                                        "label": "first_name"
+                                                    },
+                                                    {
+                                                        "name": "last_name",
+                                                        "type": "text",
+                                                        "label": "last_name"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "id": 12,
+                                            "module": "supabase:createARow",
+                                            "version": 1,
+                                            "parameters": {
+                                                "__IMTCONN__": 8314975
+                                            },
+                                            "mapper": {
+                                                "table": "parent_child",
+                                                "child_id": "{{8.child_id}}",
+                                                "parent_id": "{{4.id}}",
+                                                "relationship_type": "{{2.fieldsById.question_KLKVMV[]}}"
+                                            },
+                                            "metadata": {
+                                                "designer": {
+                                                    "x": 1756,
+                                                    "y": -196,
+                                                    "name": "child2_parent_relation"
+                                                },
+                                                "restore": {
+                                                    "expect": {
+                                                        "table": {
+                                                            "mode": "edit",
+                                                            "nested": [
+                                                                {
+                                                                    "help": "Note:\nThis is a Primary Key.<pk/>\nThis is a Foreign Key to `people.id`.<fk table='people' column='id'/>",
+                                                                    "name": "parent_id",
+                                                                    "type": "integer",
+                                                                    "label": "parent_id",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                },
+                                                                {
+                                                                    "help": "Note:\nThis is a Primary Key.<pk/>\nThis is a Foreign Key to `children.child_id`.<fk table='children' column='child_id'/>",
+                                                                    "name": "child_id",
+                                                                    "type": "integer",
+                                                                    "label": "child_id",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                },
+                                                                {
+                                                                    "help": "",
+                                                                    "name": "relationship_type",
+                                                                    "type": "text",
+                                                                    "label": "relationship_type",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "parameters": {
+                                                        "__IMTCONN__": {
+                                                            "data": {
+                                                                "scoped": "true",
+                                                                "connection": "supabase"
+                                                            },
+                                                            "label": "church project connection"
+                                                        }
+                                                    }
+                                                },
+                                                "parameters": [
+                                                    {
+                                                        "name": "__IMTCONN__",
+                                                        "type": "account:supabase",
+                                                        "label": "Connection",
+                                                        "required": true
+                                                    }
+                                                ],
+                                                "expect": [
+                                                    {
+                                                        "name": "table",
+                                                        "type": "select",
+                                                        "label": "Table",
+                                                        "required": true
+                                                    },
+                                                    {
+                                                        "name": "parent_id",
+                                                        "type": "integer"
+                                                    },
+                                                    {
+                                                        "name": "child_id",
+                                                        "type": "integer"
+                                                    },
+                                                    {
+                                                        "name": "relationship_type",
+                                                        "type": "text"
+                                                    }
+                                                ],
+                                                "interface": [
+                                                    {
+                                                        "name": "parent_id",
+                                                        "type": "number",
+                                                        "label": "parent_id"
+                                                    },
+                                                    {
+                                                        "name": "child_id",
+                                                        "type": "number",
+                                                        "label": "child_id"
+                                                    },
+                                                    {
+                                                        "name": "relationship_type",
+                                                        "type": "text",
+                                                        "label": "relationship_type"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "flow": [
+                                        {
+                                            "id": 9,
+                                            "module": "supabase:createARow",
+                                            "version": 1,
+                                            "parameters": {
+                                                "__IMTCONN__": 8314975
+                                            },
+                                            "filter": {
+                                                "name": "Child3 Exist",
+                                                "conditions": [
+                                                    [
+                                                        {
+                                                            "a": "{{2.fieldsById.question_LXLPdp}}",
+                                                            "b": "Yes",
+                                                            "o": "text:equal"
+                                                        }
+                                                    ]
+                                                ]
+                                            },
+                                            "mapper": {
+                                                "table": "children",
+                                                "gender": "{{2.fieldsById.question_JLvO2R[]}}",
+                                                "last_name": "{{2.fieldsById.question_1Mo9rl}}",
+                                                "first_name": "{{2.fieldsById.question_pGpDLB}}",
+                                                "date_of_birth": "{{2.fieldsById.question_MLpEAA}}"
+                                            },
+                                            "metadata": {
+                                                "designer": {
+                                                    "x": 1383,
+                                                    "y": -15,
+                                                    "name": "child3"
+                                                },
+                                                "restore": {
+                                                    "expect": {
+                                                        "table": {
+                                                            "mode": "edit",
+                                                            "nested": [
+                                                                {
+                                                                    "help": "Note:\nThis is a Primary Key.<pk/>",
+                                                                    "name": "child_id",
+                                                                    "type": "integer",
+                                                                    "label": "child_id",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                },
+                                                                {
+                                                                    "help": "",
+                                                                    "name": "date_of_birth",
+                                                                    "type": "date",
+                                                                    "label": "date_of_birth",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                },
+                                                                {
+                                                                    "help": "Defaults to NULL. ",
+                                                                    "name": "gender",
+                                                                    "type": "text",
+                                                                    "label": "gender",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                },
+                                                                {
+                                                                    "help": "Defaults to NULL. ",
+                                                                    "name": "emergency_contact",
+                                                                    "type": "text",
+                                                                    "label": "emergency_contact",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                },
+                                                                {
+                                                                    "help": "Defaults to Unknown. ",
+                                                                    "name": "first_name",
+                                                                    "type": "text",
+                                                                    "label": "first_name",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                },
+                                                                {
+                                                                    "help": "Defaults to Unknown. ",
+                                                                    "name": "last_name",
+                                                                    "type": "text",
+                                                                    "label": "last_name",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "parameters": {
+                                                        "__IMTCONN__": {
+                                                            "data": {
+                                                                "scoped": "true",
+                                                                "connection": "supabase"
+                                                            },
+                                                            "label": "church project connection"
+                                                        }
+                                                    }
+                                                },
+                                                "parameters": [
+                                                    {
+                                                        "name": "__IMTCONN__",
+                                                        "type": "account:supabase",
+                                                        "label": "Connection",
+                                                        "required": true
+                                                    }
+                                                ],
+                                                "expect": [
+                                                    {
+                                                        "name": "table",
+                                                        "type": "select",
+                                                        "label": "Table",
+                                                        "required": true
+                                                    },
+                                                    {
+                                                        "name": "child_id",
+                                                        "type": "integer"
+                                                    },
+                                                    {
+                                                        "name": "date_of_birth",
+                                                        "type": "date"
+                                                    },
+                                                    {
+                                                        "name": "gender",
+                                                        "type": "text"
+                                                    },
+                                                    {
+                                                        "name": "emergency_contact",
+                                                        "type": "text"
+                                                    },
+                                                    {
+                                                        "name": "first_name",
+                                                        "type": "text"
+                                                    },
+                                                    {
+                                                        "name": "last_name",
+                                                        "type": "text"
+                                                    }
+                                                ],
+                                                "interface": [
+                                                    {
+                                                        "name": "child_id",
+                                                        "type": "number",
+                                                        "label": "child_id"
+                                                    },
+                                                    {
+                                                        "name": "date_of_birth",
+                                                        "type": "text",
+                                                        "label": "date_of_birth"
+                                                    },
+                                                    {
+                                                        "name": "gender",
+                                                        "type": "text",
+                                                        "label": "gender"
+                                                    },
+                                                    {
+                                                        "name": "emergency_contact",
+                                                        "type": "text",
+                                                        "label": "emergency_contact"
+                                                    },
+                                                    {
+                                                        "name": "first_name",
+                                                        "type": "text",
+                                                        "label": "first_name"
+                                                    },
+                                                    {
+                                                        "name": "last_name",
+                                                        "type": "text",
+                                                        "label": "last_name"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "id": 13,
+                                            "module": "supabase:createARow",
+                                            "version": 1,
+                                            "parameters": {
+                                                "__IMTCONN__": 8314975
+                                            },
+                                            "mapper": {
+                                                "table": "parent_child",
+                                                "child_id": "{{9.child_id}}",
+                                                "parent_id": "{{4.id}}",
+                                                "relationship_type": "{{2.fieldsById.question_gL6954[]}}"
+                                            },
+                                            "metadata": {
+                                                "designer": {
+                                                    "x": 1683,
+                                                    "y": -15,
+                                                    "name": "child3_parent_relation"
+                                                },
+                                                "restore": {
+                                                    "expect": {
+                                                        "table": {
+                                                            "mode": "edit",
+                                                            "nested": [
+                                                                {
+                                                                    "help": "Note:\nThis is a Primary Key.<pk/>\nThis is a Foreign Key to `people.id`.<fk table='people' column='id'/>",
+                                                                    "name": "parent_id",
+                                                                    "type": "integer",
+                                                                    "label": "parent_id",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                },
+                                                                {
+                                                                    "help": "Note:\nThis is a Primary Key.<pk/>\nThis is a Foreign Key to `children.child_id`.<fk table='children' column='child_id'/>",
+                                                                    "name": "child_id",
+                                                                    "type": "integer",
+                                                                    "label": "child_id",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                },
+                                                                {
+                                                                    "help": "",
+                                                                    "name": "relationship_type",
+                                                                    "type": "text",
+                                                                    "label": "relationship_type",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "parameters": {
+                                                        "__IMTCONN__": {
+                                                            "data": {
+                                                                "scoped": "true",
+                                                                "connection": "supabase"
+                                                            },
+                                                            "label": "church project connection"
+                                                        }
+                                                    }
+                                                },
+                                                "parameters": [
+                                                    {
+                                                        "name": "__IMTCONN__",
+                                                        "type": "account:supabase",
+                                                        "label": "Connection",
+                                                        "required": true
+                                                    }
+                                                ],
+                                                "expect": [
+                                                    {
+                                                        "name": "table",
+                                                        "type": "select",
+                                                        "label": "Table",
+                                                        "required": true
+                                                    },
+                                                    {
+                                                        "name": "parent_id",
+                                                        "type": "integer"
+                                                    },
+                                                    {
+                                                        "name": "child_id",
+                                                        "type": "integer"
+                                                    },
+                                                    {
+                                                        "name": "relationship_type",
+                                                        "type": "text"
+                                                    }
+                                                ],
+                                                "interface": [
+                                                    {
+                                                        "name": "parent_id",
+                                                        "type": "number",
+                                                        "label": "parent_id"
+                                                    },
+                                                    {
+                                                        "name": "child_id",
+                                                        "type": "number",
+                                                        "label": "child_id"
+                                                    },
+                                                    {
+                                                        "name": "relationship_type",
+                                                        "type": "text",
+                                                        "label": "relationship_type"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "flow": [
+                                        {
+                                            "id": 10,
+                                            "module": "supabase:createARow",
+                                            "version": 1,
+                                            "parameters": {
+                                                "__IMTCONN__": 8314975
+                                            },
+                                            "filter": {
+                                                "name": "Child4 Exist",
+                                                "conditions": [
+                                                    [
+                                                        {
+                                                            "a": "{{2.fieldsById.question_yx5Jlx}}",
+                                                            "b": "Yes",
+                                                            "o": "text:equal"
+                                                        }
+                                                    ]
+                                                ]
+                                            },
+                                            "mapper": {
+                                                "table": "children",
+                                                "gender": "{{2.fieldsById.question_zZ57K0[]}}",
+                                                "last_name": "{{2.fieldsById.question_8G4ZdP}}",
+                                                "first_name": "{{2.fieldsById.question_XEP4eY}}",
+                                                "date_of_birth": "{{2.fieldsById.question_0LReEj}}"
+                                            },
+                                            "metadata": {
+                                                "designer": {
+                                                    "x": 1310,
+                                                    "y": 180,
+                                                    "name": "child4"
+                                                },
+                                                "restore": {
+                                                    "expect": {
+                                                        "table": {
+                                                            "mode": "edit",
+                                                            "nested": [
+                                                                {
+                                                                    "help": "Note:\nThis is a Primary Key.<pk/>",
+                                                                    "name": "child_id",
+                                                                    "type": "integer",
+                                                                    "label": "child_id",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                },
+                                                                {
+                                                                    "help": "",
+                                                                    "name": "date_of_birth",
+                                                                    "type": "date",
+                                                                    "label": "date_of_birth",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                },
+                                                                {
+                                                                    "help": "Defaults to NULL. ",
+                                                                    "name": "gender",
+                                                                    "type": "text",
+                                                                    "label": "gender",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                },
+                                                                {
+                                                                    "help": "Defaults to NULL. ",
+                                                                    "name": "emergency_contact",
+                                                                    "type": "text",
+                                                                    "label": "emergency_contact",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                },
+                                                                {
+                                                                    "help": "Defaults to Unknown. ",
+                                                                    "name": "first_name",
+                                                                    "type": "text",
+                                                                    "label": "first_name",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                },
+                                                                {
+                                                                    "help": "Defaults to Unknown. ",
+                                                                    "name": "last_name",
+                                                                    "type": "text",
+                                                                    "label": "last_name",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "parameters": {
+                                                        "__IMTCONN__": {
+                                                            "data": {
+                                                                "scoped": "true",
+                                                                "connection": "supabase"
+                                                            },
+                                                            "label": "church project connection"
+                                                        }
+                                                    }
+                                                },
+                                                "parameters": [
+                                                    {
+                                                        "name": "__IMTCONN__",
+                                                        "type": "account:supabase",
+                                                        "label": "Connection",
+                                                        "required": true
+                                                    }
+                                                ],
+                                                "expect": [
+                                                    {
+                                                        "name": "table",
+                                                        "type": "select",
+                                                        "label": "Table",
+                                                        "required": true
+                                                    },
+                                                    {
+                                                        "name": "child_id",
+                                                        "type": "integer"
+                                                    },
+                                                    {
+                                                        "name": "date_of_birth",
+                                                        "type": "date"
+                                                    },
+                                                    {
+                                                        "name": "gender",
+                                                        "type": "text"
+                                                    },
+                                                    {
+                                                        "name": "emergency_contact",
+                                                        "type": "text"
+                                                    },
+                                                    {
+                                                        "name": "first_name",
+                                                        "type": "text"
+                                                    },
+                                                    {
+                                                        "name": "last_name",
+                                                        "type": "text"
+                                                    }
+                                                ],
+                                                "interface": [
+                                                    {
+                                                        "name": "child_id",
+                                                        "type": "number",
+                                                        "label": "child_id"
+                                                    },
+                                                    {
+                                                        "name": "date_of_birth",
+                                                        "type": "text",
+                                                        "label": "date_of_birth"
+                                                    },
+                                                    {
+                                                        "name": "gender",
+                                                        "type": "text",
+                                                        "label": "gender"
+                                                    },
+                                                    {
+                                                        "name": "emergency_contact",
+                                                        "type": "text",
+                                                        "label": "emergency_contact"
+                                                    },
+                                                    {
+                                                        "name": "first_name",
+                                                        "type": "text",
+                                                        "label": "first_name"
+                                                    },
+                                                    {
+                                                        "name": "last_name",
+                                                        "type": "text",
+                                                        "label": "last_name"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "id": 14,
+                                            "module": "supabase:createARow",
+                                            "version": 1,
+                                            "parameters": {
+                                                "__IMTCONN__": 8314975
+                                            },
+                                            "mapper": {
+                                                "table": "parent_child",
+                                                "child_id": "{{10.child_id}}",
+                                                "parent_id": "{{4.id}}",
+                                                "relationship_type": "{{2.fieldsById.question_5LPZdE[]}}"
+                                            },
+                                            "metadata": {
+                                                "designer": {
+                                                    "x": 1610,
+                                                    "y": 180,
+                                                    "name": "child4_parent_relation"
+                                                },
+                                                "restore": {
+                                                    "expect": {
+                                                        "table": {
+                                                            "mode": "edit",
+                                                            "nested": [
+                                                                {
+                                                                    "help": "Note:\nThis is a Primary Key.<pk/>\nThis is a Foreign Key to `people.id`.<fk table='people' column='id'/>",
+                                                                    "name": "parent_id",
+                                                                    "type": "integer",
+                                                                    "label": "parent_id",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                },
+                                                                {
+                                                                    "help": "Note:\nThis is a Primary Key.<pk/>\nThis is a Foreign Key to `children.child_id`.<fk table='children' column='child_id'/>",
+                                                                    "name": "child_id",
+                                                                    "type": "integer",
+                                                                    "label": "child_id",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                },
+                                                                {
+                                                                    "help": "",
+                                                                    "name": "relationship_type",
+                                                                    "type": "text",
+                                                                    "label": "relationship_type",
+                                                                    "options": null,
+                                                                    "required": false
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "parameters": {
+                                                        "__IMTCONN__": {
+                                                            "data": {
+                                                                "scoped": "true",
+                                                                "connection": "supabase"
+                                                            },
+                                                            "label": "church project connection"
+                                                        }
+                                                    }
+                                                },
+                                                "parameters": [
+                                                    {
+                                                        "name": "__IMTCONN__",
+                                                        "type": "account:supabase",
+                                                        "label": "Connection",
+                                                        "required": true
+                                                    }
+                                                ],
+                                                "expect": [
+                                                    {
+                                                        "name": "table",
+                                                        "type": "select",
+                                                        "label": "Table",
+                                                        "required": true
+                                                    },
+                                                    {
+                                                        "name": "parent_id",
+                                                        "type": "integer"
+                                                    },
+                                                    {
+                                                        "name": "child_id",
+                                                        "type": "integer"
+                                                    },
+                                                    {
+                                                        "name": "relationship_type",
+                                                        "type": "text"
+                                                    }
+                                                ],
+                                                "interface": [
+                                                    {
+                                                        "name": "parent_id",
+                                                        "type": "number",
+                                                        "label": "parent_id"
+                                                    },
+                                                    {
+                                                        "name": "child_id",
+                                                        "type": "number",
+                                                        "label": "child_id"
+                                                    },
+                                                    {
+                                                        "name": "relationship_type",
+                                                        "type": "text",
+                                                        "label": "relationship_type"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "flow": [
+                        {
+                            "id": 5,
+                            "module": "supabase:createARow",
+                            "version": 1,
+                            "parameters": {
+                                "__IMTCONN__": 8314975
+                            },
+                            "filter": {
+                                "name": "Walk in children",
+                                "conditions": [
+                                    [
+                                        {
+                                            "a": "{{2.fields.`Who is this form form for`}}",
+                                            "b": "Walk in child",
+                                            "o": "text:equal"
+                                        }
+                                    ]
+                                ]
+                            },
+                            "mapper": {
+                                "table": "children",
+                                "gender": "{{2.fields.Gender[]}}",
+                                "last_name": "{{2.fields.`Last Name`}}",
+                                "first_name": "{{2.fields.`First Name`}}",
+                                "date_of_birth": "{{2.fields.Birthday}}",
+                                "emergency_contact": "{{2.fields.Phone}}"
+                            },
+                            "metadata": {
+                                "designer": {
+                                    "x": 405,
+                                    "y": 144,
+                                    "name": "children_register"
+                                },
+                                "restore": {
+                                    "expect": {
+                                        "table": {
+                                            "mode": "edit",
+                                            "nested": [
+                                                {
+                                                    "help": "Note:\nThis is a Primary Key.<pk/>",
+                                                    "name": "child_id",
+                                                    "type": "integer",
+                                                    "label": "child_id",
+                                                    "options": null,
+                                                    "required": false
+                                                },
+                                                {
+                                                    "help": "",
+                                                    "name": "date_of_birth",
+                                                    "type": "date",
+                                                    "label": "date_of_birth",
+                                                    "options": null,
+                                                    "required": false
+                                                },
+                                                {
+                                                    "help": "Defaults to NULL. ",
+                                                    "name": "gender",
+                                                    "type": "text",
+                                                    "label": "gender",
+                                                    "options": null,
+                                                    "required": false
+                                                },
+                                                {
+                                                    "help": "Defaults to NULL. ",
+                                                    "name": "emergency_contact",
+                                                    "type": "text",
+                                                    "label": "emergency_contact",
+                                                    "options": null,
+                                                    "required": false
+                                                },
+                                                {
+                                                    "help": "Defaults to Unknown. ",
+                                                    "name": "first_name",
+                                                    "type": "text",
+                                                    "label": "first_name",
+                                                    "options": null,
+                                                    "required": false
+                                                },
+                                                {
+                                                    "help": "Defaults to Unknown. ",
+                                                    "name": "last_name",
+                                                    "type": "text",
+                                                    "label": "last_name",
+                                                    "options": null,
+                                                    "required": false
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "parameters": {
+                                        "__IMTCONN__": {
+                                            "data": {
+                                                "scoped": "true",
+                                                "connection": "supabase"
+                                            },
+                                            "label": "church project connection"
+                                        }
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "__IMTCONN__",
+                                        "type": "account:supabase",
+                                        "label": "Connection",
+                                        "required": true
+                                    }
+                                ],
+                                "expect": [
+                                    {
+                                        "name": "table",
+                                        "type": "select",
+                                        "label": "Table",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "child_id",
+                                        "type": "integer"
+                                    },
+                                    {
+                                        "name": "date_of_birth",
+                                        "type": "date"
+                                    },
+                                    {
+                                        "name": "gender",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "name": "emergency_contact",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "name": "first_name",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "name": "last_name",
+                                        "type": "text"
+                                    }
+                                ],
+                                "interface": [
+                                    {
+                                        "name": "child_id",
+                                        "type": "number",
+                                        "label": "child_id"
+                                    },
+                                    {
+                                        "name": "date_of_birth",
+                                        "type": "text",
+                                        "label": "date_of_birth"
+                                    },
+                                    {
+                                        "name": "gender",
+                                        "type": "text",
+                                        "label": "gender"
+                                    },
+                                    {
+                                        "name": "emergency_contact",
+                                        "type": "text",
+                                        "label": "emergency_contact"
+                                    },
+                                    {
+                                        "name": "first_name",
+                                        "type": "text",
+                                        "label": "first_name"
+                                    },
+                                    {
+                                        "name": "last_name",
+                                        "type": "text",
+                                        "label": "last_name"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "metadata": {
+        "instant": true,
+        "version": 1,
+        "scenario": {
+            "roundtrips": 1,
+            "maxErrors": 3,
+            "autoCommit": true,
+            "autoCommitTriggerLast": true,
+            "sequential": false,
+            "slots": null,
+            "confidential": false,
+            "dataloss": false,
+            "dlq": true,
+            "freshVariables": false
+        },
+        "designer": {
+            "orphans": []
+        },
+        "zone": "eu1.make.com",
+        "notes": []
+    }
+}
